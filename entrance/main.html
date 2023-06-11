@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Entrance</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body onload="onload1()">
+<img src="../images/entrance/openImage.jpg" alt="">
+ <!-- The Modal -->
+ <div id="id01" class="modal">
+    <form class="modal-content animate" action="../game/game.html" method="post">
+        <div class="container">
+            <label for="uname"><b>הכנס שם משתמש:</b></label>
+            <input id="name" type="text"  name="uname" required><br>
+            <label for="selectedLevel"><b>בחר רמת קושי:</b></label>
+            <div id="level">
+                <div>
+                    <input type="radio" id="1" name="level" value="easy">
+                    <label for="easy">קל</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="2" name="level" value="medium">
+                    <label for="medium">בינוני</label><br>
+                </div>
+                <div>
+                     <input type="radio" id="3" name="level" value="hard">
+                     <label for="hard">קשה</label><br>
+               </div>  
+             </div>
+          
+            <div class="btns">
+                <button onclick="saveData()" type="submit"class="sumbitbtn" >התחל משחק</button>
+                <button type="button" class="cancelbtn">ביטול</button>
+            </div>
+        </div>
+    </form>
+</div>
+    <button id="btnEnter"> <span>
+         כניסה למשחק
+    </span>
+</button>
+</body>
+</html>

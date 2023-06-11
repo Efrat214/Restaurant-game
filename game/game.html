@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='game.css'>
+    <script src='game.js'></script>
+</head>
+<body onload="onload1()" >
+    <div class="grid-co">
+         <img id="background" src="../images/game/background/burger.jpg" a%lt="">
+         <div class="shelfImg">
+             <img id="frizer" src="../images/game/book-shelf.png" alt="">
+        </div>
+        <!-- <div>
+            <img id="screen" src="../images/game/device.png" alt="">
+        </div> -->
+        <div id="screenDiv">
+            
+        </div>
+        <div id="myContainer">
+            <div id="myAnimation"></div>
+            <div class="container" id="container"></div>
+
+        </div>   
+        <div class="nav_side">
+            <div class="def item2">
+               <div class="tooltip2">
+                <img src="../images/icons/icon1.png" />
+                 <span class="tooltiptext2">רמת קושי</span>
+               </div>
+               <div class="tooltip2">
+                   <a href="../entrance/main.html"><img src="../images/icons/icon2.png" /></a>
+                   <span class="tooltiptext2">לדף הבית</span>
+               </div>
+               <div class="tooltip2">
+                 <img class="startBtn" src="../images/icons/icon3.png"  onclick="playOn()"/></a>
+                   <span class="tooltiptext2">התחל משחק</span>
+               </div>
+               <div class="tooltip2">
+                <a href="instructions.html"> <img src="../images/icons/icon4.png"/></a>
+                   <span class="tooltiptext2">הוראות</span>
+               </div>
+            </div>
+        </div>
+        <div dir="rtl" class="gameState">
+                <div class="points">
+                    <p>נקודות:</p>
+                    <div class="tooltip" dir="rtl">
+                        <span class="tooltiptext"></span>
+                    </div>
+                    <span class="score" dir="ltr" id="score">0</span>
+                </div>
+                <!-- <div class="points">
+                    <p>שניות:</p>
+                    <span id="time">10</span>
+                </div> -->
+                <div class="points">
+                    <p>שלב:</p>
+                    <span id="lev">1</span>
+                </div>
+        </div>
+   
+    </div> 
+   
+
+
+    <audio id="win" style="display:none" controls="controls">
+        <source src="../music/iceTruk.mp3" type="audio/mpeg" />
+    </audio>
+
+    
+    <audio id="click" style="display:none" controls="controls">
+        <source src="../music/click.mp3" type="audio/mpeg" />
+    </audio>
+  
+    <audio id="worng" style="display:none" controls="controls">
+        <source src="../music/wrong.mp3" type="audio/mpeg" />
+    </audio>
+   
+    <audio id="good" style="display:none" controls="controls">
+        <source src="../music/good.mp3" type="audio/mpeg" />
+    </audio>
+
+    </div>
+       
+
+</body>
+</html>

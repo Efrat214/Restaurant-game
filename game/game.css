@@ -1,0 +1,316 @@
+ #background {
+   
+    width: 200vh;
+    height: 100vh;
+    /* padding-top: 8%; */
+} 
+#frizer {
+    box-sizing: border-box; 
+    z-index: 50;
+    width: 30%;
+   position: absolute;
+    right: 100px;
+    height: 45%;
+    margin-block: inherit;
+    top:55%;
+}
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltip2 .tooltiptext2 {
+        visibility: hidden;
+        width: 50px;
+        background-color: #fff;
+        color: black;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        left: 110%;
+        margin-top: 17px;
+        font-size: 20px;
+    }
+
+        .tooltip2 .tooltiptext2::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent white transparent transparent;
+        }
+
+    .tooltip2:hover .tooltiptext2 {
+        visibility: visible;
+       
+    }
+
+.nav_side{
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    top: 5%;
+    position: fixed;
+    left: 2%;
+}
+.nav_side>div{
+    display: flex;
+    flex-direction: column;
+
+}
+.points {
+    display: inline-block;
+}
+.score, #time, #lev {
+    background: rgba(255,255,255,0.2);
+    padding: 0 1.5rem;
+    line-height: 0.8;
+    border-radius: 1rem;
+    margin: 2.5px;
+    text-align: center;
+    font-size: 5rem;
+    line-height: 0.8;
+    margin-bottom: 0;
+    z-index: 50;
+    left: 100px;
+}
+#mat{
+    display: flex;
+    z-index: 50;
+    flex-direction: row;
+    position: absolute;
+    top: 49vh;
+    left: 135vh;
+}
+.item img{
+    width: 15vh;
+    height: 15vh;
+    z-index: 50;
+}
+#screenImg{
+    z-index: 50;
+    width: 45vh;
+    height: 60vh;
+    top:30vh;
+    position: absolute;
+    left: 70vh;
+    
+}
+.order{
+    z-index: 50;
+    position: absolute;
+    top:20vh;
+    left: 40vh;
+    flex: auto;
+    /* background-color:aqua; */
+}
+
+#orderItemDiv{
+    z-index: 50;
+    position: absolute;
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    top: 7vh;
+    left: 25vh;
+    align-items: center;
+}
+
+.orderItem img{
+    z-index: 50;
+    width: 17vh;
+    height: 17vh;
+    
+}
+
+#myAnimation {
+    width: 1%;
+    height: 100%;
+    position: absolute;
+    background-color: #02CAD9;
+    z-index: 4;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+div.container {
+    background: white;
+    border-radius: 2px;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+#myContainer {
+    width: 25%;
+    height: 5%;
+    position: absolute;
+    bottom: 5%;
+    left: 23%;
+    /* border-radius: 5px; */
+}
+
+#containerHome {
+    height: 100%;
+}
+
+
+
+
+.gameState{
+    position: absolute;
+    right: 175vh;
+    display: flex;
+    flex-direction: row;
+    top: 82vh;
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    font-size: 28px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 1% auto 2% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 75%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+    .popup h2 {
+        margin-top: 0;
+        color: #333;
+    }
+    .popup .content-1,
+.content-2 {
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+}
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+.show {
+    visibility: visible !important;
+    opacity: 100 !important;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    /*right: 25px;*/
+    top: 0;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+
+    .close:hover,
+    .close:focus {
+        color: salmon;
+        cursor: pointer;
+    }
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 93%;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+    .close:hover {
+        color: #E5F720;
+    }
+    .close {
+        position: absolute;
+        /*right: 25px;*/
+        top: 0;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        margin: 0;
+        color: black;
+    }
+    
+        .close:hover,
+        .close:focus {
+            color: salmon;
+            cursor: pointer;
+        }
+    

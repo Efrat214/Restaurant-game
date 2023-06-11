@@ -1,0 +1,34 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text {
+    top:40vh;
+    z-index: 50;
+    direction: ltr;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    top:40vh;
+    z-index: 50;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#background {
+    opacity: 25%;
+    top:40vh;
+    z-index: 50;
+    width: 200vh;
+    height: 70vh;
+    /* padding-top: 8%; */
+} 
+

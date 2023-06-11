@@ -1,0 +1,167 @@
+img {
+    width: 100%;
+    height: 1000%;
+    padding-top: 8%;
+}
+#btnEnter{
+    border-radius: 4px;
+    background-color: #f0ba18;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  
+  }
+  
+  #btnEnter span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #btnEnter span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #btnEnter:hover span {
+    padding-right: 25px;
+  }
+  
+  #btnEnter:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  form button {
+      font-size: 1.5vw;
+      border-radius: 1vh;
+      padding: 10px;
+      border: none;
+      margin: 10px;
+  }
+  form {
+      padding:2%;
+      direction: rtl;
+      text-align: center;
+      font-family: Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #name {
+      box-shadow: inset 1px 0px 6px 0px #93a6e2;
+      width: 80%;
+      padding: 12px 20px;
+      margin: 9% 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+  }
+  
+  .btns {
+      display: inline-flex;
+      direction: rtl;
+      border-radius: 4px;
+     
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      /* font-size: 28px;
+      padding: 20px;
+      width: 200px; */
+      transition: all 0.5s;
+      cursor: pointer;
+      /* margin: 5px; */
+  }
+  
+  .btnsContainer{
+      display:flex;
+  }
+  
+  
+      button:hover {
+          opacity: 0.8;
+      }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn, .sumbitbtn{
+      width: auto;
+      background-color: #f0ba18;
+  }
+  .container {
+      padding: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+       display: none; /*Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 40%; /* Could be more or less, depending on screen size */
+  }
+  
+  
+  /* Add Zoom Animation */
+  .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+      from {
+          -webkit-transform: scale(0)
+      }
+  
+      to {
+          -webkit-transform: scale(1)
+      }
+  }
+  
+  @keyframes animatezoom {
+      from {
+          transform: scale(0)
+      }
+  
+      to {
+          transform: scale(1)
+      }
+  }
+  #level{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center;
+    flex-wrap: nowrap;
+    align-items: center; */
+  }
+  #level div{
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    right: 20vh;
+  }
+
+
+
+  
